@@ -1,0 +1,1399 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Varshini - Portfolio</title>
+
+    <style>
+
+        /* ==============================
+           UNIVERSAL SELECTOR
+        ============================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* ==============================
+           BODY
+        ============================== */
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background-color: #080d1a;
+
+            color: #e5e7eb;
+
+            line-height: 1.6;
+        }
+
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        header {
+
+            min-height: 650px;
+
+            padding: 30px 7%;
+
+            background-color: #080d1a;
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        /* ==============================
+           TOP BAR
+        ============================== */
+
+        .top-bar {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            /* BOX MODEL */
+
+            padding: 10px 0;
+
+            margin-bottom: 70px;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+
+            font-size: 24px;
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+
+            color: white;
+        }
+
+
+        .logo span {
+
+            color: #3b82f6;
+        }
+
+
+        /* ==============================
+           NAVIGATION
+        ============================== */
+
+        nav a {
+
+            text-decoration: none;
+
+            color: #94a3b8;
+
+            font-size: 14px;
+
+            /* BOX MODEL */
+
+            margin-left: 25px;
+
+            padding: 8px;
+        }
+
+
+        /* PSEUDO CLASS */
+
+        nav a:hover {
+
+            color: #60a5fa;
+        }
+
+
+        /* ==============================
+           HERO
+        ============================== */
+
+        .hero {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+            max-width: 1100px;
+
+            width: 100%;
+
+            margin: auto;
+        }
+
+
+        /* SMALL TEXT */
+
+        .hero-text small {
+
+            color: #3b82f6;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+        }
+
+
+        /* MAIN HEADING */
+
+        .hero-text h1 {
+
+            font-size: 72px;
+
+            line-height: 1.05;
+
+            color: white;
+
+            margin: 15px 0;
+        }
+
+
+        .hero-text h1 span {
+
+            color: #3b82f6;
+        }
+
+
+        .hero-text h3 {
+
+            font-size: 22px;
+
+            font-weight: normal;
+
+            color: #60a5fa;
+
+            margin-bottom: 20px;
+        }
+
+
+        .hero-text p {
+
+            max-width: 500px;
+
+            color: #94a3b8;
+        }
+
+
+        /* ==============================
+           PROFILE IMAGE
+        ============================== */
+
+        .hero-image {
+
+            text-align: center;
+        }
+
+
+        .hero-image img {
+
+            width: 300px;
+
+            height: 300px;
+
+            object-fit: cover;
+
+            border-radius: 30px;
+
+            /* BOX MODEL */
+
+            padding: 8px;
+
+            border: 2px solid #3b82f6;
+
+            background-color: #111827;
+
+            box-shadow: 15px 15px 0 #1d4ed8;
+        }
+
+
+        /* ==============================
+           BUTTON
+        ============================== */
+
+        .button {
+
+            display: inline-block;
+
+            background-color: #2563eb;
+
+            color: white;
+
+            text-decoration: none;
+
+            /* BOX MODEL */
+
+            margin-top: 25px;
+
+            padding: 13px 26px;
+
+            border: 2px solid #2563eb;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .button:hover {
+
+            background-color: transparent;
+
+            color: #60a5fa;
+
+            border-color: #3b82f6;
+        }
+
+
+        /* ==============================
+           MAIN
+        ============================== */
+
+        main {
+
+            width: 86%;
+
+            max-width: 1100px;
+
+            margin: 50px auto;
+        }
+
+
+        /* ==============================
+           SECTION
+        ============================== */
+
+        .section {
+
+            background-color: #0f172a;
+
+            /* BOX MODEL */
+
+            margin-bottom: 35px;
+
+            padding: 40px;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* ID SELECTOR */
+
+        #about {
+
+            border-top: 5px solid #3b82f6;
+        }
+
+
+        /* ==============================
+           SECTION TITLE
+        ============================== */
+
+        .section-title {
+
+            display: flex;
+
+            align-items: center;
+
+            margin-bottom: 25px;
+        }
+
+
+        .number {
+
+            color: #60a5fa;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            /* BOX MODEL */
+
+            margin-right: 15px;
+
+            padding: 7px 10px;
+
+            border: 1px solid #3b82f6;
+
+            border-radius: 50%;
+        }
+
+
+        h2 {
+
+            font-size: 30px;
+
+            color: white;
+        }
+
+
+        /* ==============================
+           ABOUT
+        ============================== */
+
+        .section p {
+
+            color: #94a3b8;
+
+            margin-bottom: 12px;
+        }
+
+
+        /* ==============================
+           EDUCATION
+        ============================== */
+
+        .education {
+
+            display: grid;
+
+            grid-template-columns: 150px 1fr;
+
+            gap: 25px;
+
+            padding: 20px 0;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+
+        .education:last-child {
+
+            border-bottom: none;
+        }
+
+
+        .year {
+
+            color: #3b82f6;
+
+            font-weight: bold;
+        }
+
+
+        .education h3 {
+
+            color: white;
+
+            margin-bottom: 5px;
+        }
+
+
+        .education p {
+
+            color: #94a3b8;
+        }
+
+
+        /* ==============================
+           SKILLS
+        ============================== */
+
+        .skills {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        .skill {
+
+            background-color: #111827;
+
+            color: #93c5fd;
+
+            /* BOX MODEL */
+
+            padding: 10px 18px;
+
+            border: 1px solid #1e40af;
+
+            border-radius: 25px;
+
+            transition: 0.3s;
+        }
+
+
+        .skill:hover {
+
+            background-color: #2563eb;
+
+            color: white;
+
+            border-color: #2563eb;
+        }
+
+
+        /* ==============================
+           PROJECTS
+        ============================== */
+
+        .projects {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .project {
+
+            background-color: #111827;
+
+            color: white;
+
+            /* BOX MODEL */
+
+            padding: 25px;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 18px;
+
+            min-height: 250px;
+
+            transition: 0.3s;
+        }
+
+
+        .project:hover {
+
+            transform: translateY(-8px);
+
+            border-color: #3b82f6;
+
+            box-shadow:
+                0 10px 30px rgba(37, 99, 235, 0.15);
+        }
+
+
+        .project-number {
+
+            color: #3b82f6;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            margin-bottom: 20px;
+        }
+
+
+        .project h3 {
+
+            font-size: 22px;
+
+            color: white;
+
+            margin-bottom: 15px;
+        }
+
+
+        .project p {
+
+            color: #94a3b8;
+        }
+
+
+        .technology {
+
+            margin-top: 20px;
+
+            color: #60a5fa !important;
+
+            font-size: 13px;
+
+            font-weight: bold;
+        }
+
+
+        /* ==============================
+           CERTIFICATIONS
+        ============================== */
+
+        .certifications {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+
+        .certificate {
+
+            padding: 20px;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 12px;
+
+            background-color: #111827;
+
+            transition: 0.3s;
+        }
+
+
+        .certificate:hover {
+
+            border-color: #3b82f6;
+
+            transform: translateY(-4px);
+        }
+
+
+        .certificate span {
+
+            color: #3b82f6;
+
+            font-weight: bold;
+
+            font-size: 14px;
+        }
+
+
+        .certificate p {
+
+            margin-top: 8px;
+        }
+
+
+        /* ==============================
+           CONTACT
+        ============================== */
+
+        .contact {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 15px;
+        }
+
+
+        .contact-item {
+
+            background-color: #111827;
+
+            /* BOX MODEL */
+
+            padding: 20px;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 12px;
+        }
+
+
+        .contact-item strong {
+
+            display: block;
+
+            color: #3b82f6;
+
+            margin-bottom: 5px;
+        }
+
+
+        .contact-item a {
+
+            color: #cbd5e1;
+
+            text-decoration: none;
+        }
+
+
+        .contact-item a:hover {
+
+            color: #60a5fa;
+
+            text-decoration: underline;
+        }
+
+
+        /* ==============================
+           FOOTER
+        ============================== */
+
+        footer {
+
+            background-color: #080d1a;
+
+            color: white;
+
+            text-align: center;
+
+            /* BOX MODEL */
+
+            padding: 35px;
+
+            margin-top: 50px;
+
+            border-top: 1px solid #1e293b;
+        }
+
+
+        footer span {
+
+            color: #3b82f6;
+        }
+
+
+        footer p {
+
+            color: #64748b;
+
+            margin-top: 5px;
+        }
+
+
+        /* ==============================
+           RESPONSIVE DESIGN
+        ============================== */
+
+        @media (max-width: 800px) {
+
+            .hero {
+
+                grid-template-columns: 1fr;
+
+                text-align: center;
+            }
+
+
+            .hero-text h1 {
+
+                font-size: 52px;
+            }
+
+
+            .hero-text p {
+
+                margin: auto;
+            }
+
+
+            .hero-image img {
+
+                width: 250px;
+
+                height: 250px;
+            }
+
+
+            .projects {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .certifications {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .contact {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .top-bar {
+
+                flex-direction: column;
+
+                gap: 20px;
+            }
+
+
+            nav a {
+
+                margin: 5px;
+            }
+
+
+            .education {
+
+                grid-template-columns: 1fr;
+
+                gap: 5px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         HEADER
+    ============================== -->
+
+    <header>
+
+
+        <!-- TOP BAR -->
+
+        <div class="top-bar">
+
+            <div class="logo">
+
+                V<span>.</span>T
+
+            </div>
+
+
+            <nav>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#education">
+                    Education
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+
+
+        <!-- HERO -->
+
+        <div class="hero">
+
+
+            <div class="hero-text">
+
+                <small>
+                    HELLO, I'M
+                </small>
+
+
+                <h1>
+
+                    Varshini<br>
+
+                    <span>T.</span>
+
+                </h1>
+
+
+                <h3>
+
+                    Full Stack Developer
+
+                </h3>
+
+
+                <p>
+
+                    Computer Science graduate and MCA student
+                    passionate about building useful web
+                    applications and learning new technologies.
+
+                </p>
+
+
+                <a
+                    href="#projects"
+                    class="button"
+                >
+
+                    View My Work →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROFILE -->
+
+            <div class="hero-image">
+
+                <img
+                    src="WhatsApp Image 2026-09-24 at 1.47.58 PM.jpeg"
+                    alt="Varshini Profile Photo"
+                >
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==============================
+         MAIN CONTENT
+    ============================== -->
+
+    <main>
+
+
+        <!-- ABOUT -->
+
+        <section
+            id="about"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <span class="number">
+                    01
+                </span>
+
+                <h2>
+                    About Me
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Hello! I am Varshini, a Computer Science
+                graduate and MCA student interested in
+                Full Stack Development and Software Development.
+
+            </p>
+
+
+            <p>
+
+                I enjoy creating modern web applications,
+                solving programming problems and continuously
+                improving my technical skills.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- EDUCATION -->
+
+        <section
+            id="education"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <span class="number">
+                    02
+                </span>
+
+                <h2>
+                    Education
+                </h2>
+
+            </div>
+
+
+            <div class="education">
+
+                <div class="year">
+
+                    2026 - 2028
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+
+                        Master of Computer Applications
+
+                    </h3>
+
+                    <p>
+
+                        Sree Saraswathi Thyagaraja College
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="education">
+
+                <div class="year">
+
+                    Completed
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+
+                        B.Sc Computer Science
+
+                    </h3>
+
+                    <p>
+
+                        Arulmigu Palaniandavar Arts College
+                        for Women
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SKILLS -->
+
+        <section
+            id="skills"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <span class="number">
+                    03
+                </span>
+
+                <h2>
+                    Skills
+                </h2>
+
+            </div>
+
+
+            <div class="skills">
+
+                <div class="skill">
+                    HTML
+                </div>
+
+                <div class="skill">
+                    CSS
+                </div>
+
+                <div class="skill">
+                    JavaScript
+                </div>
+
+                <div class="skill">
+                    React
+                </div>
+
+                <div class="skill">
+                    Tailwind CSS
+                </div>
+
+                <div class="skill">
+                    Node.js
+                </div>
+
+                <div class="skill">
+                    Express.js
+                </div>
+
+                <div class="skill">
+                    MongoDB
+                </div>
+
+                <div class="skill">
+                    SQL
+                </div>
+
+                <div class="skill">
+                    Java
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PROJECTS -->
+
+        <section
+            id="projects"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <span class="number">
+                    04
+                </span>
+
+                <h2>
+                    Projects
+                </h2>
+
+            </div>
+
+
+            <div class="projects">
+
+
+                <div class="project">
+
+                    <div class="project-number">
+
+                        PROJECT 01
+
+                    </div>
+
+
+                    <h3>
+
+                        LifeOS
+
+                    </h3>
+
+
+                    <p>
+
+                        A productivity and habit tracking
+                        application designed to help users
+                        manage their daily activities.
+
+                    </p>
+
+
+                    <p class="technology">
+
+                        React · JavaScript · Local Storage
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="project">
+
+                    <div class="project-number">
+
+                        PROJECT 02
+
+                    </div>
+
+
+                    <h3>
+
+                        GadgetZone
+
+                    </h3>
+
+
+                    <p>
+
+                        An e-commerce application for browsing
+                        and purchasing electronic gadgets.
+
+                    </p>
+
+
+                    <p class="technology">
+
+                        React · Node.js · Express · Prisma · MySQL
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="project">
+
+                    <div class="project-number">
+
+                        PROJECT 03
+
+                    </div>
+
+
+                    <h3>
+
+                        Plant Disease Analyzer
+
+                    </h3>
+
+
+                    <p>
+
+                        An application designed to identify
+                        plant diseases using image analysis.
+
+                    </p>
+
+
+                    <p class="technology">
+
+                        ASP.NET · TensorFlow.js
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CERTIFICATIONS -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <span class="number">
+                    05
+                </span>
+
+                <h2>
+                    Certifications
+                </h2>
+
+            </div>
+
+
+            <div class="certifications">
+
+
+                <div class="certificate">
+
+                    <span>
+                        01
+                    </span>
+
+                    <p>
+
+                        Front-End Development Libraries
+
+                    </p>
+
+                </div>
+
+
+                <div class="certificate">
+
+                    <span>
+                        02
+                    </span>
+
+                    <p>
+
+                        Networking Basics -
+                        Cisco Networking Academy
+
+                    </p>
+
+                </div>
+
+
+                <div class="certificate">
+
+                    <span>
+                        03
+                    </span>
+
+                    <p>
+
+                        JavaScript Fundamentals
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTACT -->
+
+        <section
+            id="contact"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <span class="number">
+                    06
+                </span>
+
+                <h2>
+                    Let's Connect
+                </h2>
+
+            </div>
+
+
+            <div class="contact">
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        EMAIL
+                    </strong>
+
+                    <a href="mailto:varshinithampuraj52@gmail.com">
+
+                        varshinithampuraj52@gmail.com
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        GITHUB
+                    </strong>
+
+                    <a
+                        href="https://github.com/varshinie52"
+                        target="_blank"
+                    >
+
+                        github.com/varshinie52
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        LINKEDIN
+                    </strong>
+
+                    <a
+                        href="https://www.linkedin.com/in/varshini-thampuraj-5170862b7/"
+                        target="_blank"
+                    >
+
+                        LinkedIn Profile
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        ROLE
+                    </strong>
+
+                    Full Stack Developer
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+
+            VARSHINI <span>T.</span>
+
+        </h3>
+
+
+        <p>
+
+            © 2026 Varshini T. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
+
